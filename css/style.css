@@ -60,21 +60,38 @@ body {
 
 }
 .wrapper {
-    max-width: 1024px;
     margin: 0 auto;
-
+    max-width: 1024px;
+}
+.link{
+    text-decoration: none;
+    color: #fffff1;
 }
 .summary {
-
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: url(../img/space.jpg);
-    background-size: cover;
+    background: url(../img/myPhoto.jpg);
+    background-size: 100%;
     background-repeat: no-repeat;
     display: flex;
-    line-height: 50px;
-    font-size: 20px;
-    color: #f8f8f8;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 24px;
+    color: #fffff1;
+    font-weight: 400;
+    font-style: italic;
+    height: 800px;
+}
+.title{
+    font-size: 30px;
+    color: #98ff94;
+    font-weight: 700;
+    margin: 25px 0;
+    font-style: normal;
+}
+
+.summary__leftColumn{
+    padding-top: 12%;
+}
+.summary__rightColumn{
+    padding-top: 12%;
 }
