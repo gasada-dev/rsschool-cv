@@ -4,33 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Summary</title>
+    <title>resume</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="summary">
-            <div class="summary__leftColumn">
-                <h2 class="title">Name</h2>
-                <p>Dmitry Svatko</p>
-                <h2 class="title">Email</h2>
-                <a href="#" class="link">gasada@protonmail.com</a>
-                <h2 class="title">Goal</h2>
-                <p>Working in IT. Always learn new things</p>
-                <h2 class="title">Skills</h2>
-                <p>HTML, CSS, GIT</p>
-            </div>
-            <div class="summary__rightColumn">
-                <h2 class="title">Code examples</h2>
-                <a class="link" href="https://github.com/gasada-dev">https://github.com/gasada-dev</a>
-                <h2 class="title">Experience</h2>
-                <a class="link" href="https://github.com/gasada-dev">https://github.com/gasada-dev</a>
-                <h2 class="title">Education</h2>
-                <a class="link" href="https://careers.epam.by/training/upskilllab">EPAM UpSkill Lab</a>
-                <h2 class="title">English</h2>
-                <p>Beginner</p>
-            </div>
+        <div class="resume">
+            <header class="header">
+                <div class="header__column">
+                    <h1 class="header__name title ">Dmitry Svatko</h1>
+                    <h2 class="title">Objective</h2>
+                    <p class="text text--bg">Junior Front-end Developers</p>
+                    <div class="header__contacts">
+                        <a href="mailto:gasada@protonmail.com" class="link"><img src="./img/email.svg" width="21px">
+                            gmail</a>
+                        <a href="https://github.com/gasada-dev" class="link"> <img src="./img/github.svg" width="21px">
+                            github</a>
+                    </div>
+                    <div class="header__info">
+                        <p class="text text--align text--bg">Beginner Front-End Developer. Interested in becoming part of a friendly team
+                            that wants to
+                            progress. I like to communicate with new people and otherwise develop</p>
+                    </div>
+                </div>
+                <div class="header__column">
+                    <img class="myPhoto" src="./img/myPhoto.jpg" alt="Моё фото">
+                </div>
+            </header>
+            <main class="main">
+                <div class="main__left">
+                    <h2 class="title title--left">Code examples: <a class="link" href="https://github.com/gasada-dev">github</a></h2>
+                    <h2 class="title title--left">Education: <a class="link" href="https://careers.epam.by/training/upskilllab">EPAM UpSkill Lab</a></h2>
+                    <h2 class="title title--left">English: <span class="text text--bg">Beginner</span></h2>
+                </div>
+                <div class="main__right">
+                    <h2 class="title">Skills:</h2>
+                    <p class="text text--bg">HTML</p>
+                    <p class="text text--bg">CSS</p>
+                    <p class="text text--bg">GIT</p>
+                    <p class="text text--bg">Flex</p>
+                </div>
+            </main>
         </div>
     </div>
 </body>

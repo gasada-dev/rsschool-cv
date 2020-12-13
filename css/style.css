@@ -44,7 +44,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 a{
 	text-decoration: none;
 	font-weight: 700;
@@ -57,41 +56,78 @@ input::-webkit-input-placeholder{
 /* ------------------------------------------------------------------ */
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-
+    cursor: default;
+    background: url(../img/background.jpg);
+    background-repeat: no-repeat;
 }
 .wrapper {
     margin: 0 auto;
     max-width: 1024px;
+    padding: 20px 0;
 }
-.link{
-    text-decoration: none;
-    color: #fffff1;
-}
-.summary {
-    background: url(../img/myPhoto.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
+.link {
+    color: #030eaa;
+    margin: 5px 0;
     font-size: 24px;
-    color: #fffff1;
-    font-weight: 400;
-    font-style: italic;
-    height: 800px;
+}
+.link:hover{
+    color: #000ed6b0;
 }
 .title{
-    font-size: 30px;
-    color: #98ff94;
+    color: #000000;
     font-weight: 700;
-    margin: 25px 0;
-    font-style: normal;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 24px;
 }
-
-.summary__leftColumn{
-    padding-top: 12%;
+.title--left{
+    text-align: left;
 }
-.summary__rightColumn{
-    padding-top: 12%;
+.text {
+    font-size: 22px;
+    color: #000000b6;
+    text-align: center;
+    margin: 5px 10px;
+}
+.text--bg{
+    background-color: #b4bfff;
+    padding: 7px;
+    border-radius: 20px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15%;
+}
+.header__column{
+}
+.header__name{
+    margin-bottom: 20px;
+    font-size: 38px;
+}
+.text--align{
+    text-align: justify;
+    margin-right: 50px;
+}
+.header__contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 100px;
+}
+.myPhoto{
+    width: 275px;
+    height: 275px;
+    border-radius: 65px;
+    opacity: 90%;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 16%;
+}
+.main__right{
+    padding-right: 75px;
 }
