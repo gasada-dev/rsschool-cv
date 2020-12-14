@@ -90,9 +90,13 @@ body {
     margin: 5px 10px;
 }
 .text--bg{
-    background-color: #b4bfff;
+    background-color: #bfc9ffef;
     padding: 7px;
     border-radius: 20px;
+}
+.text--align{
+    text-align: justify;
+    margin:0 21% 0 0;
 }
 .header{
     display: flex;
@@ -106,21 +110,18 @@ body {
     margin-bottom: 20px;
     font-size: 38px;
 }
-.text--align{
-    text-align: justify;
-    margin-right: 50px;
-}
 .header__contacts{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px 100px;
+    flex-wrap: wrap;
+    margin: 10px 30px;
 }
 .myPhoto{
-    width: 275px;
-    height: 275px;
+    width: 250px;
+    height: 250px;
     border-radius: 65px;
-    opacity: 90%;
+    opacity: 85%;
 }
 .main{
     display: flex;
@@ -130,4 +131,35 @@ body {
 }
 .main__right{
     padding-right: 75px;
+}
+.footer{
+    padding: 15px;
+}
+@media screen and (max-width: 796px){
+    .text{
+        font-size: 18px;
+    }
+    .link{
+        font-size: 20px;
+    }
+    .text--align{
+        text-align: start;
+        margin:0 5% 0 0;
+    }
+}
+@media screen and (max-width: 738px){
+    .header{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0px 5%;
+    }
+    .header__contacts{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 10px 15%;
+    }
+    .main__right{
+        padding-right: 0px;
+    }
+
 }
