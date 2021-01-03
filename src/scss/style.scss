@@ -1,22 +1,26 @@
-/* block */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap');
+
 @import "_normalize.scss";
 @import "_vars.scss";
 @import "_mixins.scss";
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Lato', sans-serif;
 }
+
 .link{
     text-decoration: none;
     color: inherit;
-    margin-right: 25px;
 }
+
 .container { 
     max-width: 1020px;
     margin: 0 auto;
 }
+
 .header{
     background-color: #2D303A;
+    border-bottom: #323746 solid 6px;
     .header__row{
         display: flex;
         justify-content: space-between;
@@ -24,16 +28,30 @@ body {
         align-items: center;
         .header__title{
             color: $header-color;
+            .header__title--starColor{
+                color: $header-hoverColor;
+            }
         }
+
             .header__nav{
             display: flex;
             flex-direction: row;
             color: $header-color;
             font-size: $header-fontSize;
             font-weight: 700;
+                li:first-child{
+                    color: $header-hoverColor;
+                    list-style-type: none;
+                }
+
+                .link--padding {
+                    padding-right: 25px;
+                    
+                }
+
                 :hover{
-                    color: #F06C64;
-            }
+                    color: $header-hoverColor;
+                }
             }
     }
 }
