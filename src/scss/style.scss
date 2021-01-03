@@ -57,6 +57,23 @@ body {
 }
 
 .main {
-    background-color: beige;
-
+    background-color: #F06C64;
+}
+.frontpage{
+    background-color: #F06C64;
+    border-bottom: #EA676B solid 6px;
+    .frontpage__row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 55px 0;
+        .frontpage__main{
+            display: flex;
+            align-items: center;
+            .frontpage__img{
+                margin: 0 35px;
+            }
+        }
+    }
 }
