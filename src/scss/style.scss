@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 @import "_normalize.scss";
 @import "_vars.scss";
 @import "_mixins.scss";
@@ -11,8 +10,26 @@ body {
 .link{
     text-decoration: none;
     color: inherit;
+    &:hover{
+        color: $header-hoverColor;
+    }
 }
-
+.text{
+    margin: 5px 0;
+    font-size: 12px;
+    line-height: 22px;
+    color: $textColor;
+}
+.title{
+    color:$titleColor;
+}
+.subtitle{
+    margin: 0;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 18px;
+    color: $titleColor;
+}
 .container { 
     max-width: 1020px;
     margin: 0 auto;
@@ -39,7 +56,7 @@ body {
             color: $header-color;
             font-size: $header-fontSize;
             font-weight: 700;
-                li:first-child{
+                .active{
                     color: $header-hoverColor;
                     list-style-type: none;
                 }
@@ -48,10 +65,8 @@ body {
                     padding-right: 25px;
                     
                 }
-
-                :hover{
-                    color: $header-hoverColor;
-                }
+                
+                
             }
     }
 }
@@ -62,17 +77,43 @@ body {
 .frontpage{
     background-color: #F06C64;
     border-bottom: #EA676B solid 6px;
+
     .frontpage__row{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding: 55px 0;
+
         .frontpage__main{
             display: flex;
             align-items: center;
             .frontpage__img{
                 margin: 0 35px;
+            }
+        }
+    }
+}
+.services{
+    background-color: #F2F2F2;
+    border-bottom: #FFFFFF solid 6px;
+    padding: 40px 0;
+    .services__description{
+        color: #767E9E;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 30px;
+
+    }
+    .services__row{    
+        display: grid;
+        grid-template-rows: repeat(2, 105px);
+        grid-template-columns: repeat(3, 1fr);
+        padding: 40px 0;
+        .services__item{
+            display: flex;
+            .services__img{
+                margin: 0 20px;
             }
         }
     }
