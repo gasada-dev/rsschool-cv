@@ -7,15 +7,9 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-.link{
-    text-decoration: none;
-    color: inherit;
-    &:hover{
-        color: $header-hoverColor;
-    }
-}
+
 .text{
-    margin: 5px 0;
+    margin: 10px 0;
     font-size: 12px;
     line-height: 22px;
     color: $textColor;
@@ -33,6 +27,7 @@ body {
 .container { 
     max-width: 1020px;
     margin: 0 auto;
+    padding: 0 40px;
 }
 
 .header{
@@ -49,27 +44,31 @@ body {
                 color: $header-hoverColor;
             }
         }
-
             .header__nav{
             display: flex;
             flex-direction: row;
             color: $header-color;
             font-size: $header-fontSize;
             font-weight: 700;
-                .active{
+            :first-child{
+                list-style-type: none;
+                color: $header-hoverColor;
+            }
+            .link{
+                text-decoration: none;
+                color: inherit;
+    
+                &:hover{
                     color: $header-hoverColor;
-                    list-style-type: none;
                 }
-
-                .link--padding {
-                    padding-right: 25px;
-                    
-                }
-                
                 
             }
+            .link--padding {
+                padding-right: 25px;
+            }
+        }
     }
-}
+} //header
 
 .main {
     background-color: #F06C64;
@@ -93,7 +92,7 @@ body {
             }
         }
     }
-}
+} //frontpage
 .services{
     background-color: #F2F2F2;
     border-bottom: #FFFFFF solid 6px;
@@ -113,8 +112,52 @@ body {
         .services__item{
             display: flex;
             .services__img{
-                margin: 0 20px;
+                margin: 0 20px 40px 0;
             }
+        }
+    }
+} //services
+.portfolio{
+    background-color: #2D303A;
+    border-bottom: #323746 solid 6px;
+    padding: 60px 0;
+    
+    .portfolio__filter{
+
+    .btn-filter{
+        background-color: inherit;
+        border: 1px solid #767E9E;
+        border-radius: 4px;
+        color:#767E9E;
+        &:focus{
+            outline: 0px;
+        }
+    }
+    .focus{
+        border: 1px solid #DEDEDE;
+        color: #DEDEDE;
+    }
+    }
+    .portfolio__grid-img{
+        display: grid;
+        grid-template-columns: repeat(4, 220px);
+        grid-template-rows: repeat(3, 187px);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+}
+.footer{
+    background-color: #2D303A;
+    .footer__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footer__text{
+            font-size: 18px;
+            font-weight: 900;
+        }
+        .ico{
+            margin:0 4px;
         }
     }
 }

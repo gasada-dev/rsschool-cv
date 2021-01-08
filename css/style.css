@@ -221,7 +221,7 @@ button:-moz-focusring,
 [type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
 [type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: 0px dotted ButtonText;
 }
 
 /**
@@ -353,17 +353,8 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.link:hover {
-  color: #F06C64;
-}
-
 .text {
-  margin: 5px 0;
+  margin: 10px 0;
   font-size: 12px;
   line-height: 22px;
   color: #767E9E;
@@ -384,6 +375,7 @@ body {
 .container {
   max-width: 1020px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 
 .header {
@@ -428,9 +420,18 @@ body {
   font-weight: 700;
 }
 
-.header .header__row .header__nav .active {
-  color: #F06C64;
+.header .header__row .header__nav :first-child {
   list-style-type: none;
+  color: #F06C64;
+}
+
+.header .header__row .header__nav .link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header .header__row .header__nav .link:hover {
+  color: #F06C64;
 }
 
 .header .header__row .header__nav .link--padding {
@@ -506,6 +507,64 @@ body {
 }
 
 .services .services__row .services__item .services__img {
-  margin: 0 20px;
+  margin: 0 20px 40px 0;
+}
+
+.portfolio {
+  background-color: #2D303A;
+  border-bottom: #323746 solid 6px;
+  padding: 60px 0;
+}
+
+.portfolio .portfolio__filter .btn-filter {
+  background-color: inherit;
+  border: 1px solid #767E9E;
+  border-radius: 4px;
+  color: #767E9E;
+}
+
+.portfolio .portfolio__filter .btn-filter:focus {
+  outline: 0px;
+}
+
+.portfolio .portfolio__filter .focus {
+  border: 1px solid #DEDEDE;
+  color: #DEDEDE;
+}
+
+.portfolio .portfolio__grid-img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (220px)[4];
+      grid-template-columns: repeat(4, 220px);
+  -ms-grid-rows: (187px)[3];
+      grid-template-rows: repeat(3, 187px);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.footer {
+  background-color: #2D303A;
+}
+
+.footer .footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer__row .footer__text {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.footer .footer__row .ico {
+  margin: 0 4px;
 }
 /*# sourceMappingURL=style.css.map */
