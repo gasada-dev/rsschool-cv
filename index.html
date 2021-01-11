@@ -14,6 +14,7 @@
   <header class="header">
     <div class="container">
       <div class="header__row">
+        <img src="./src/img/Burger-menu-icon.svg" alt="icon" class="burger-menu-icon">
         <div class="header__title">
           <h1>SINGOLO<span class="header__title--starColor">*</span></h1>
         </div>
@@ -31,15 +32,22 @@
     <section class="frontpage">
       <div class="container">
         <div class="frontpage__row">
-          <div class="frontpage__leftArrow">
-            <a class="link" href="#"><img src="./src/img/arrow-left.svg" alt="error"></a>
+          <div class="frontpage__Arrow">
+            <button class="btn frontpage__slide-prev"><img src="./src/img/arrow-left.svg" alt="error"></button>
           </div>
-          <div class="frontpage__main">
-            <img class="frontpage__img" src="./src/img/phone-vertical.png" alt="error">
-            <img class="frontpage__img" src="./src/img/phone-horizontal.png" alt="error">
+          <div class="frontpage__slider">
+            <div class="frontpage__slide active">
+              <img class="frontpage__img" src="./src/img/phone-vertical.png" alt="error">
+              <img class="frontpage__img" src="./src/img/phone-horizontal.png" alt="error">
+            </div>
+            <div class="frontpage__slide frontpage__slide-background">
+              <img src="./src/img/phone-vertical-small.png" alt="img" class="frontpage-small-phone">
+              <img src="./src/img/phone-vertical-big.png" alt="img" class="frontpage-big-phone">
+              <img src="./src/img/phone-vertical-small.png" alt="img" class="frontpage-small-phone">
+            </div>
           </div>
-          <div class="frontpage__rightArrow">
-            <a class="link" href="#"><img src="./src/img/arrow-right.svg" alt="error"> </a>
+          <div class="frontpage__Arrow">
+            <button class="btn frontpage__slide-next"><img src="./src/img/arrow-right.svg" alt="error"></button>
           </div>
         </div>
       </div>
@@ -87,14 +95,16 @@
             <img class="services__img" src="./src/img/services-item-4.svg">
             <div>
               <h3 class="subtitle">Responsive Layout</h3>
-              <p class="text">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula.Praesent elit leo.</p>
+              <p class="text">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula.Praesent
+                elit leo.</p>
             </div>
           </div>
           <div class="services__item">
             <img class="services__img" src="./src/img/services-item-5.svg">
             <div>
               <h3 class="subtitle">24 / 7 Support</h3>
-              <p class="text">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat.Pellentesque egestas venenatis lorem .</p>
+              <p class="text">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat.Pellentesque
+                egestas venenatis lorem .</p>
             </div>
           </div>
           <div class="services__item">
@@ -120,31 +130,30 @@
             sem nec elit.</p>
         </div>
         <div class="portfolio__filter">
-          <button class="btn-filter text focus" data-filter="all">All</button>
-          <button class="btn-filter text" data-filter="web">Web Design</button>
-          <button class="btn-filter text" data-filter="graphic">Graphic Design</button>
-          <button class="btn-filter text" data-filter="artwork">Artwork</button>
+          <button class="btn btn-filter text portfolio__filter-active">All</button>
+          <button class="btn btn-filter text">Web Design</button>
+          <button class="btn btn-filter text">Graphic Design</button>
+          <button class="btn btn-filter text">Artwork</button>
         </div>
         <div class="portfolio__grid-img"></div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__row">
-          <div class="footer__text">
-            <p class="text">© Copyright 2013</p>
-          </div>
-          <div class="footer__icons">
-            <a href="#"><img src="./src/img/ico-facebook.png" alt="facebook" class="ico"></a>
-            <a href="#"><img src="./src/img/ico-google-plus.png" alt="google" class="ico"></a>
-            <a href="#"><img src="./src/img/ico-twitter.png" alt="twitter" class="ico"></a>
-            <a href="#"><img src="./src/img/ico-linkedin.png" alt="linkedin" class="ico"></a>
-          </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__row">
+        <div class="footer__text">
+          <p class="text">© Copyright 2013</p>
+        </div>
+        <div class="footer__icons">
+          <a href="#"><img src="./src/img/ico-facebook.png" alt="facebook" class="ico"></a>
+          <a href="#"><img src="./src/img/ico-google-plus.png" alt="google" class="ico"></a>
+          <a href="#"><img src="./src/img/ico-twitter.png" alt="twitter" class="ico"></a>
+          <a href="#"><img src="./src/img/ico-linkedin.png" alt="linkedin" class="ico"></a>
         </div>
       </div>
-    </footer>
-  </main>
-
+    </div>
+  </footer>
   <script src="./src/js/index.js"></script>
 </body>
 

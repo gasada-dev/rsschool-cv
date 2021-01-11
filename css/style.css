@@ -360,6 +360,16 @@ body {
   color: #767E9E;
 }
 
+.btn {
+  background-color: inherit;
+  border: 0px;
+  cursor: pointer;
+}
+
+:focus {
+  outline: 0px;
+}
+
 .title {
   color: #666D89;
 }
@@ -376,6 +386,11 @@ body {
   max-width: 1020px;
   margin: 0 auto;
   padding: 0 40px;
+  height: 100%;
+}
+
+.burger-menu-icon {
+  display: none;
 }
 
 .header {
@@ -445,9 +460,11 @@ body {
 .frontpage {
   background-color: #F06C64;
   border-bottom: #EA676B solid 6px;
+  height: 600px;
 }
 
 .frontpage .frontpage__row {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -461,19 +478,62 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 55px 0;
 }
 
-.frontpage .frontpage__row .frontpage__main {
+.frontpage .frontpage__row .frontpage__Arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.frontpage .frontpage__row .frontpage__slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.frontpage .frontpage__row .frontpage__main .frontpage__img {
+.frontpage .frontpage__row .frontpage__slider .frontpage__slide {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.frontpage .frontpage__row .frontpage__slider .frontpage-small-phone {
+  position: relative;
+}
+
+.frontpage .frontpage__row .frontpage__slider .frontpage-small-phone:first-child {
+  left: 17px;
+}
+
+.frontpage .frontpage__row .frontpage__slider .frontpage-small-phone:last-child {
+  right: 28px;
+}
+
+.frontpage .frontpage__row .frontpage__slider .frontpage-big-phone {
+  z-index: 1;
+}
+
+.frontpage .frontpage__row .frontpage__slider .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.frontpage .frontpage__row .frontpage__slider .frontpage__img {
   margin: 0 35px;
 }
 
@@ -517,17 +577,12 @@ body {
 }
 
 .portfolio .portfolio__filter .btn-filter {
-  background-color: inherit;
   border: 1px solid #767E9E;
   border-radius: 4px;
   color: #767E9E;
 }
 
-.portfolio .portfolio__filter .btn-filter:focus {
-  outline: 0px;
-}
-
-.portfolio .portfolio__filter .focus {
+.portfolio .portfolio__filter .portfolio__filter-active {
   border: 1px solid #DEDEDE;
   color: #DEDEDE;
 }
@@ -566,5 +621,66 @@ body {
 
 .footer .footer__row .ico {
   margin: 0 4px;
+}
+
+@media (max-width: 770px) {
+  .container {
+    max-width: 687px;
+  }
+  .burger-menu-icon {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 26px;
+    z-index: 3;
+    -webkit-transition: -webkit-transform 0.1s;
+    transition: -webkit-transform 0.1s;
+    transition: transform 0.1s;
+    transition: transform 0.1s, -webkit-transform 0.1s;
+  }
+  .burger-menu-icon.active {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .header .header__row {
+    width: 100%;
+  }
+  .header .header__row .header__title {
+    text-align: center;
+    width: 100%;
+  }
+  .header .header__row .header__nav {
+    list-style: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 278px;
+    position: fixed;
+    left: -278px;
+    top: 0;
+    bottom: 0;
+    background-color: #2D303A;
+    padding: 0;
+    margin: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 2;
+    -webkit-transition: left 0.4s;
+    transition: left 0.4s;
+  }
+  .header .header__row .header__nav.active {
+    left: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    max-width: 314px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
