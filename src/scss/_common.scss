@@ -1,0 +1,37 @@
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.text{
+    margin: 10px 0;
+    font-size: 12px;
+    line-height: 22px;
+    color: $textColor;
+}
+.btn{
+    background-color: inherit;
+    border: 0px;
+    cursor: pointer;
+}
+:focus{
+    outline: 0px;
+}
+.title{
+    color:$titleColor;
+}
+
+.subtitle{
+    margin: 0;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 18px;
+    color: $titleColor;
+}
+
+.container { 
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 40px;
+    height: 100%;
+}

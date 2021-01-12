@@ -1,0 +1,18 @@
+.footer{
+    background-color: #2D303A;
+
+    .footer__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .footer__text{
+            font-size: 18px;
+            font-weight: 900;
+        }
+
+        .ico{
+            margin:0 4px;
+        }
+    }
+}//footer

@@ -1,0 +1,52 @@
+.frontpage{
+    background-color: #F06C64;
+    border-bottom: #EA676B solid 6px;
+    height: 600px;
+
+    .frontpage__row{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .frontpage__Arrow{
+            display: flex;
+            justify-content: center;
+        }
+
+        .frontpage__slider{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .frontpage__slide{
+                display: none;
+                align-items: center;
+                justify-content: center;
+            }
+            .frontpage__slide-padding{
+                padding: 65px 0 0 0;
+            }
+            .frontpage-small-phone{
+                position: relative;
+                &:first-child{
+                    left: 17px;
+                }
+                &:last-child{
+                    right: 28px;
+                }
+            }
+            .frontpage-big-phone{
+                z-index: 1;
+            }
+            .active{
+                display: flex;
+            }
+
+            .frontpage__img{
+                margin: 0 35px;
+            }
+        }
+    }
+} //frontpage

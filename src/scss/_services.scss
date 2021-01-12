@@ -1,0 +1,29 @@
+.services{
+    background-color: #F2F2F2;
+    border-bottom: #FFFFFF solid 6px;
+    padding: 40px 0;
+
+    .services__description{
+        color: #767E9E;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 30px;
+    }
+
+    .services__row{    
+        display: grid;
+        grid-template-rows: repeat(2, 105px);
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 40px;
+        column-gap: 60px;
+        padding: 30px 0 20px 0;
+
+        .services__item{
+            display: flex;
+
+            .services__img{
+                margin: 0 20px 40px 0;
+            }
+        }
+    }
+} //services
