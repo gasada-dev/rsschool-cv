@@ -2,26 +2,23 @@
     background-color: #2D303A;
     border-bottom: #323746 solid 6px;
     padding: 60px 0;
-    
-    .portfolio__filter{
 
-    .btn-filter{
+    .portfolio__filter .btn-filter{
         border: 1px solid #767E9E;
         border-radius: 4px;
         color:#767E9E;
-    }
-
+        }
+    
     .portfolio__filter-active{
         border: 1px solid #DEDEDE;
         color: #DEDEDE;
     }
-    }
-
+    
     .portfolio__grid-img{
         display: grid;
         grid-template-columns: repeat(4, 220px);
         grid-template-rows: repeat(3, 187px);
         grid-column-gap: 20px;
         grid-row-gap: 20px;
-    }
+    } 
 }//portfolio

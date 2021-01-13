@@ -27,10 +27,6 @@
             font-size: $header-fontSize;
             font-weight: 700;
 
-            :first-child{
-                list-style-type: none;
-                color: $header-hoverColor;
-            }
 
             .link{
                 text-decoration: none;
@@ -43,6 +39,13 @@
 
             .link--padding {
                 padding-right: 25px;
+            }
+            
+            .select {
+                color: $header-hoverColor !important;
+            }
+            .list-style{
+                list-style: none;
             }
         }
     }

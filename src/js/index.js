@@ -6,7 +6,7 @@ const frontpageSlider = document.querySelector('.frontpage__slider');
 const colorsArray = ['#F06C64', '#648BF0'];
 const bordersColorsArray = ['#EA676B', '#648BF0'];
 
-
+//slider
 let index = 0;
 
 const activeSlide = () => {
@@ -42,7 +42,7 @@ const prevSlide = () => {
 next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
 
-
+//portfolioGrid
 
 const gridImg = document.querySelector('.portfolio__grid-img');
 const imgArray = [];
@@ -73,6 +73,7 @@ document.querySelectorAll('.btn-filter')
     value.addEventListener('click', () => clickBtn(value, array));
   });
 
+//burgerMenu
 
 document.querySelector('.burger-menu-icon').addEventListener('click', (elem) => {
   elem.target.classList.toggle('active')
@@ -81,5 +82,13 @@ document.querySelector('.burger-menu-icon').addEventListener('click', (elem) => 
 document.querySelectorAll('.link').forEach((elem) => {
   elem.addEventListener('click', () => {
     document.querySelector('.header__nav').classList.remove('active')
+  });
+})
+
+//headerFocus
+
+document.querySelectorAll('.link').forEach((elem) => {
+  elem.addEventListener('click', () => {
+    document.querySelector('.link').classList.remove('select')
   });
 })

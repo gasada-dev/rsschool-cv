@@ -20,7 +20,13 @@
 
         .services__item{
             display: flex;
-
+            .text{
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;  
+                overflow: hidden;
+            }
+            
             .services__img{
                 margin: 0 20px 40px 0;
             }
