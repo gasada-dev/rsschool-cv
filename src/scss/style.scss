@@ -9,6 +9,11 @@
 @import "_footer.scss";
 @import "_media.scss";
 
+html{
+    scroll-behavior: smooth;
+}
+
 .main {
     background-color: #F06C64;
+
 }

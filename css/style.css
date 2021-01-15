@@ -589,7 +589,7 @@ body {
   padding: 60px 0;
 }
 
-.portfolio .portfolio__filter .btn-filter {
+.portfolio .btn-filter {
   border: 1px solid #767E9E;
   border-radius: 4px;
   color: #767E9E;
@@ -636,7 +636,7 @@ body {
   margin: 0 4px;
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1019px) {
   .frontpage {
     height: 450px;
   }
@@ -790,10 +790,14 @@ body {
   }
 }
 
-@media (max-width: 374) {
+@media (max-width: 374px) {
   .container {
     max-width: 314px;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .main {

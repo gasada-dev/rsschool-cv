@@ -24,11 +24,12 @@
                 display: none;
                 align-items: center;
                 justify-content: center;
-
             }
+
             .frontpage__slide-padding{
                 padding: 65px 0 0 0;
             }
+
             .frontpage-small-phone{
                 position: relative;
                 &:first-child{
@@ -38,9 +39,11 @@
                     right: 28px;
                 }
             }
+
             .frontpage-big-phone{
                 z-index: 1;
             }
+            
             .active{
                 display: flex;
             }

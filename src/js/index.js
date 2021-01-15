@@ -14,6 +14,7 @@ const activeSlide = () => {
     slide.classList.remove('active')
   }
   slides[index].classList.add('active')
+  //backgroundColor
   frontpage.style.backgroundColor = colorsArray[index]
   frontpage.style.borderColor = bordersColorsArray[index]
 
@@ -87,8 +88,10 @@ document.querySelectorAll('.link').forEach((elem) => {
 
 //headerFocus
 
-document.querySelectorAll('.link').forEach((elem) => {
-  elem.addEventListener('click', () => {
-    document.querySelector('.link').classList.remove('select')
-  });
-})
+document.querySelector('.header__nav').addEventListener('click', (elem) => {
+  document.querySelector('.select').classList.remove('select')
+  elem.target.classList.add('select')
+});
+
+
+
