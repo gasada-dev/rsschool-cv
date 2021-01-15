@@ -488,6 +488,14 @@ body {
           justify-content: center;
 }
 
+.frontpage .frontpage__row .frontpage__Arrow .frontpage__slide-prev {
+  padding: 0;
+}
+
+.frontpage .frontpage__row .frontpage__Arrow .frontpage__slide-next {
+  padding: 0;
+}
+
 .frontpage .frontpage__row .frontpage__slider {
   display: -webkit-box;
   display: -ms-flexbox;

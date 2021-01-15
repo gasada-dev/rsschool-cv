@@ -13,6 +13,14 @@
         .frontpage__Arrow{
             display: flex;
             justify-content: center;
+
+            .frontpage__slide-prev{
+                padding: 0;
+            }
+
+            .frontpage__slide-next{
+                padding: 0;
+            }
         }
 
         .frontpage__slider{
