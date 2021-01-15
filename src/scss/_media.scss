@@ -11,10 +11,10 @@
 
     .frontpage__img{
         width: 180px;
-        height: 364px;
+        height: 360px;
 
         &:last-child{
-        width: 364px;
+        width: 360px;
         height: 180px;
         }
     }
@@ -22,11 +22,12 @@
     .frontpage-small-phone{
         width: 130px;
         height: 260px;
+
     }
 
     .frontpage-big-phone{
-        width: 185px;
-        height: 370px;
+        width: 190px;
+        height: 380px;
     }
 
     .services .services__row{
@@ -113,6 +114,12 @@
     .frontpage-small-phone{
         width: 70px;
         height: 140px;
+        &:first-child{
+            left: 9px !important;
+        }
+        &:last-child{
+            right: 11px !important;
+        }
     }
 
     .frontpage-big-phone{
@@ -162,7 +169,11 @@
 @media (max-width: 374px){
 
     .container{
-        max-width: 314px;
+        max-width: 374px;
+        padding: 0 30px;
     }
-    
+
+    .portfolio .frontpage{
+        padding: 0 0;
+    }
 }
