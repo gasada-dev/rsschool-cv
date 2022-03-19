@@ -1,17 +1,13 @@
 # **Dmitry Svatko**
-***
-# Email: gasada.dev@gmail.com**
-***
+# **Email:** gasada.dev@gmail.com
 # **Working in IT. Always learn new things**
-***
 # **Skills:** 
-  HTML
-  CSS, SCSS
-  JS
-  Git, Github
-  Markdown
-  VS CODE
-***
+* HTML
+* CSS, SCSS
+* JS
+* Git, Github
+* Markdown
+* VS CODE
 # **Code example:**
 
 Find the greatest common divisor of two positive integers. The integers can be large, so you need to find a clever solution.
@@ -31,12 +27,9 @@ function mygcd(x,y){
         if (x === 0) return y;
         y %= x;
     }
-}```
-***
+}
+```
 
 # **Experience** https://github.com/gasada-dev/Shelter
-***
 # **Education:** No
-***
 # **English:** A1
-***
