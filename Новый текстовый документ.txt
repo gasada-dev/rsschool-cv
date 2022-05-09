@@ -1,0 +1,8 @@
+1. Task: https://github.com/rolling-scopes-school/tasks/blob/master/tasks/cv/git-markdown.md
+2. Screenshot:
+![Скриншот 19-03-2022 202651](https://user-images.githubusercontent.com/65293425/159131726-7b35e2b0-2197-4637-a5c2-dd0470891d80.jpg)
+3. Deploy: https://chakapega-fancy-weather.netlify.com/
+4. Done 19.03.2022 / deadline 05.04.2022
+5. Score: 100 / 100
+[x] выполнены требования к репозиторию +50;
+[x] выполнены требования к коммитам и Pull Request +50.

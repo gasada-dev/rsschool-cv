@@ -1,0 +1,95 @@
+@import "_normalize.scss";
+
+body {
+  background-color: rgb(235, 235, 235);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  color: rgb(11, 53, 6);
+  padding: 1rem;
+
+  .text--orange {
+    color: rgb(255, 171, 16);
+  }
+  // .text--italic {
+  //   font-style: italic;
+  // }
+
+  .use-keyboard-input {
+    position: absolute;
+    border: none;
+    top: 7rem;
+    right: 5rem;
+    width: 20rem;
+    height: 5rem;
+  }
+
+  .keyboard {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5rem 0;
+    background: rgb(70, 158, 92);
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
+    user-select: none;
+    transition: bottom 0.4s;
+
+    .keyboard__keys {
+      text-align: center;
+      font-size: 1.1rem;
+
+      .keyboard__key {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.8rem;
+        width: 6%;
+        max-width: 4rem;
+        margin: 0.1rem;
+        border-radius: 0.75rem;
+        border: none;
+        background: rgb(167, 167, 167);
+        color: #ffffff;
+        outline: none;
+        vertical-align: top;
+        cursor: pointer;
+
+        &:hover {
+          background: rgba(167, 167, 167, 0.9);
+        }
+        &:active {
+          background: rgba(148, 148, 148, 0.85);
+        }
+      }
+      .keyboard__key--wide {
+        width: 12%;
+      }
+
+      .keyboard__key--extra-wide {
+        width: 36%;
+        max-width: 18rem;
+      }
+      .keyboard__key--activatable::after {
+        content: "";
+        top: 0.6rem;
+        right: 0.6rem;
+        position: absolute;
+        width: 0.5rem;
+        height: 0.5rem;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 50%;
+      }
+      .keyboard__key--active::after {
+        background: rgb(118, 236, 0);
+      }
+      .keyboard__key--dark {
+        background: rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+
+  .keyboard--hidden {
+    bottom: -100%;
+  }
+}
